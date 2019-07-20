@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6, p, a, span {
+	font-family: $main-font;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 300;
+	color: #56819f;
+
+	&:hover {
+		color: $link-hover-color;
+		cursor: pointer;
+	}
+}
+
+ul, ol {
+	font-family: $main-font;
+	list-style-type: none;
+}
+
+.icon {
+	fill: $main-menu-font-color;
+	height: 20px;
+	margin: 0 15px;
+}
+
+.arrow {
+		height: 12px;
+}
+
+.orange-indicator {
+	height: 10px;
+  	width: 10px;
+  	margin: 0 1px;
+  	background-color: $button-color;
+  	border-radius: 50%;
+}
+
