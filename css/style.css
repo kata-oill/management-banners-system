@@ -306,11 +306,6 @@ template {
 [hidden] {
   display: none; }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; }
-
 [class*="clearfix"]::before,
 [class*="clearfix"]::after {
   content: "";
@@ -321,6 +316,50 @@ template {
   float: left;
   min-height: 1px;
   max-height: auto; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.padding {
+  padding: 25px; }
+
+.col-offset-0 {
+  margin-left: 0; }
+
+.col-offset-1 {
+  margin-left: 8.33%; }
+
+.col-offset-2 {
+  margin-left: 16.66%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.33%; }
+
+.col-offset-5 {
+  margin-left: 41.66%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-7 {
+  margin-left: 58.33%; }
+
+.col-offset-8 {
+  margin-left: 66.66%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-10 {
+  margin-left: 83.33%; }
+
+.col-offset-11 {
+  margin-left: 91.66%; }
 
 @media (min-width: 1200px) {
   .col-1 {
@@ -446,7 +485,9 @@ a {
 
 ul, ol {
   font-family: myriad-pro, sans-serif;
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
 
 .icon {
   fill: #9c9c9c;
@@ -459,39 +500,114 @@ ul, ol {
 .orange-indicator {
   height: 10px;
   width: 10px;
-  margin: 0 1px;
+  margin: 0 10px;
   background-color: #f58220;
-  border-radius: 50%; }
+  border-radius: 50%;
+  float: right; }
+
+.app {
+  height: 100%; }
+
+/* -------------
+Hamburger
+----------------*/
+.hamburger {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-top: 2px solid #999999;
+  background: transparent;
+  position: relative; }
+  .hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #999999;
+    transform: translateY(6px); }
+  .hamburger::after {
+    transform: translateY(14px); }
+
+/* -------------
+Sidebar
+----------------*/
+.sidebar {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+  background-color: #191919;
+  -webkit-transform: translateZ(0);
+  visibility: visible;
+  -webkit-backface-visibility: hidden; }
+  .sidebar header {
+    background-color: #191919;
+    width: 100%;
+    display: block;
+    height: 60px;
+    line-height: 60px; }
+
+/* -------------
+Sidebar Nav
+----------------*/
+.sidebar-nav {
+  position: fixed;
+  background-color: #191919;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 6em;
+  z-index: 9;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch; }
+  .sidebar-nav ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0; }
+    .sidebar-nav ul li {
+      margin-left: 0;
+      padding-left: 0;
+      display: inline-block;
+      width: 100%; }
+      .sidebar-nav ul li a {
+        color: #a6a6a6;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 1.05em 1em;
+        position: relative;
+        display: block; }
+        .sidebar-nav ul li a:hover {
+          background-color: #282828;
+          color: #f5f5f2;
+          border-left: 6px solid #f58220; }
+          .sidebar-nav ul li a:hover .icon {
+            filter: invert(100%) sepia(83%) saturate(237%) hue-rotate(308deg) brightness(107%) contrast(92%); }
 
 nav {
   width: 100%;
+  height: 60px;
   border-bottom: 1px solid #e3e3e3; }
 
-ul.main-nav {
-  margin: 0;
-  padding: 0;
-  height: 60px;
-  inlight-height: 60px;
-  border-left: 1px solid #e3e3e3; }
+.nav ul {
+  float: right; }
 
 li.tab {
   float: left;
   height: 30px;
-  line-height: 30px;
   border-left: 1px solid #e3e3e3;
   padding: 15px 0; }
   li.tab span {
     padding-right: 15px; }
   li.tab ul {
-    display: none; }
-  li.tab:first-child {
-    margin-left: 0; }
+    display: none;
+    float: none;
+    background-color: #f5f5f2;
+    padding: 15px 0; }
   li.tab:hover {
     background-color: #f5f5f2; }
     li.tab:hover ul {
-      display: block;
-      background-color: #f5f5f2;
-      padding: 15px 0; }
+      display: block; }
 
 ul.dropdown-menu > li > ul > div > li {
   display: inline-block; }
@@ -499,8 +615,8 @@ ul.dropdown-menu > li > ul > div > li {
     display: block;
     padding: 5px; }
 
-img .icon {
-  position: absolute; }
+.icon-svg {
+  filter: invert(69%) sepia(1%) saturate(3034%) hue-rotate(110deg) brightness(101%) contrast(78%); }
 
 div .info {
   position: relative;

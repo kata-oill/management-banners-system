@@ -1,19 +1,14 @@
 nav {
 	width: 100%;
+	height: 60px;
 	border-bottom: 1px solid $border-color;
 }
-ul.main-nav {
-	margin: 0;
-	padding: 0;
-	height: 60px;
-	inlight-height: 60px;
-	border-left: 1px solid $border-color;
+.nav ul {
+	float: right;
 }
-
 li.tab {
 	float: left;
 	height: 30px;
-	line-height: 30px;
 	border-left: 1px solid $border-color;
 	padding: 15px 0;
 
@@ -23,10 +18,9 @@ li.tab {
 
 	ul {
 		display: none;
-	}
-
-	&:first-child {
-		margin-left: 0;
+		float: none;
+		background-color: $main-background-color;
+		padding: 15px 0;
 	}
 
 	&:hover {
@@ -35,9 +29,6 @@ li.tab {
 
 		ul {
 			display: block;
-			background-color: $main-background-color;
-			padding: 15px 0;
-	
 		}
 	}
 }
@@ -49,8 +40,8 @@ ul.dropdown-menu > li > ul > div > li {
 		padding: 5px;
 	}
 }
-img .icon {
-	position: absolute;
+.icon-svg {
+	filter: invert(69%) sepia(1%) saturate(3034%) hue-rotate(110deg) brightness(101%) contrast(78%);
 }
 div .info {
 	position: relative;
@@ -60,4 +51,5 @@ div .info {
 .profile-name {
 	color: $link-color;
 	font-size: $nick-name-size;
-}
+} 
+

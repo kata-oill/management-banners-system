@@ -1,0 +1,101 @@
+.app{
+  height: 100%;
+}
+
+/* -------------
+Hamburger
+----------------*/
+.hamburger {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-top: 2px solid $hamburger-color;
+  background: transparent;
+  position: relative;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-top: 2px solid $hamburger-color;
+      transform: translateY(6px);
+    }
+
+    &::after {
+      transform: translateY(14px);
+    }
+}
+
+/* -------------
+Sidebar
+----------------*/
+.sidebar {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  overflow:hidden;
+  background-color: $sidebar-menu-background-color;
+  -webkit-transform: translateZ(0);
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+  
+  header{
+    background-color: $sidebar-menu-background-color;
+    width: 100%;
+    display:block;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+/* -------------
+Sidebar Nav
+----------------*/
+.sidebar-nav {
+  position: fixed;
+  background-color: $sidebar-menu-background-color;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 6em;
+  z-index: 9;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+ 
+  
+  ul{
+    list-style:none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    
+    li{
+      margin-left: 0;
+      padding-left: 0;
+      //min-width: 13em;
+      display:inline-block;
+      width: 100%;
+
+      
+      a{
+        color: $general-font-color;
+        font-size: $sidebar-font-size;
+        font-weight: 500;
+        padding: 1.05em 1em;
+        position: relative;
+        display:block;
+        
+        &:hover{
+          background-color: $sidebar-menu-hover-color;
+          color: $sidemenu-font-hover;
+          border-left: 6px solid $button-color;
+
+          .icon {
+            filter: invert(100%) sepia(83%) saturate(237%) hue-rotate(308deg) brightness(107%) contrast(92%);
+          }
+        }
+      } 
+    }
+  }
+}

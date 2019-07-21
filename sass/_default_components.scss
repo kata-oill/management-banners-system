@@ -16,6 +16,8 @@ a {
 ul, ol {
 	font-family: $main-font;
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 .icon {
@@ -25,14 +27,15 @@ ul, ol {
 }
 
 .arrow {
-		height: 12px;
+	height: 12px;
 }
 
 .orange-indicator {
 	height: 10px;
   	width: 10px;
-  	margin: 0 1px;
+  	margin: 0 10px;
   	background-color: $button-color;
   	border-radius: 50%;
+  	float: right;
 }
 
