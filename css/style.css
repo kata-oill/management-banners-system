@@ -1,6 +1,6 @@
-/* Colors */
-/* Font sizes */
-/* Fonts */
+/* --- Colors --- */
+/* --- Font sizes --- */
+/* --- Fonts --- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -317,17 +317,21 @@ template {
   min-height: 1px;
   max-height: auto; }
 
+body {
+  background-color: #f5f5f2; }
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto; }
 
+.row {
+  display: flex; }
+
 .padding {
   padding: 25px; }
 
-body {
-  background-color: #f5f5f2; }
-
+/*--- Bootstrap grid margin --- */
 .col-offset-0 {
   margin-left: 0; }
 
@@ -364,6 +368,7 @@ body {
 .col-offset-11 {
   margin-left: 91.66%; }
 
+/*--- Bootstrap grid --- */
 @media (min-width: 1200px) {
   .col-1 {
     width: 8.33%; }
@@ -493,6 +498,10 @@ ul, ol {
   margin: 0; }
 
 .icon {
+  height: 20px;
+  margin: 0 15px; }
+
+svg {
   fill: #9c9c9c;
   height: 20px;
   margin: 0 15px; }
@@ -506,18 +515,18 @@ ul, ol {
   margin: 0 10px;
   background-color: #f58220;
   border-radius: 50%;
-  float: right; }
+  float: right;
+  right: 33px; }
 
-.app {
-  height: 100%; }
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
 
-body {
-  background-color: #f5f5f2;
-  height: 100%; }
+.personaldata {
+  padding-left: 7px; }
 
-/* -------------
-Hamburger
-----------------*/
+/* --- Hamburger --- */
 .hamburger {
   width: 20px;
   height: 20px;
@@ -536,12 +545,8 @@ Hamburger
   .hamburger::after {
     transform: translateY(14px); }
 
-/* -------------
-Sidebar
-----------------*/
+/* --- Sidebar --- */
 .sidebar {
-  position: absolute;
-  height: 100%;
   top: 0;
   overflow: hidden;
   background-color: #191919;
@@ -551,13 +556,9 @@ Sidebar
   .sidebar header {
     background-color: #191919;
     width: 100%;
-    display: block;
-    height: 60px;
-    line-height: 60px; }
+    height: 60px; }
 
-/* -------------
-Sidebar Nav
-----------------*/
+/* --- Sidebar Nav --- */
 .sidebar-nav {
   position: fixed;
   background-color: #191919;
@@ -575,42 +576,74 @@ Sidebar Nav
     .sidebar-nav ul li {
       margin-left: 0;
       padding-left: 0;
-      display: inline-block;
+      display: flex;
+      align-items: center;
       width: 100%; }
-      .sidebar-nav ul li a {
+      .sidebar-nav ul li:hover {
+        background-color: #282828;
+        text-fill-color: #ffffff;
+        -webkit-text-fill-color: #ffffff;
+        border-left: 6px solid #f58220;
+        cursor: pointer; }
+        .sidebar-nav ul li:hover svg {
+          fill: #ffffff; }
+      .sidebar-nav ul li span {
         color: #a6a6a6;
         font-size: 14px;
         font-weight: 500;
         padding: 1.05em 1em;
         position: relative;
         display: block; }
-        .sidebar-nav ul li a:hover {
-          background-color: #282828;
-          color: #f5f5f2;
-          border-left: 6px solid #f58220; }
-          .sidebar-nav ul li a:hover .icon {
-            filter: invert(100%) sepia(83%) saturate(237%) hue-rotate(308deg) brightness(107%) contrast(92%); }
 
+/* --- nav bar --- */
 nav {
   width: 100%;
   height: 60px;
-  border-bottom: 1px solid #e3e3e3; }
+  border-bottom: 1px solid #e3e3e3;
+  background-color: #ffffff; }
 
 .nav ul {
   float: right; }
+
+/* --- dropdown list --- */
+.dropdown-menu {
+  border: 1px solid #e3e3e3;
+  box-shadow: 2px 1px 25px #e3e3e3; }
+
+.dropdown-title {
+  font-size: 14px;
+  color: #9c9c9c; }
+
+.dropdown-value {
+  font-size: 14px;
+  color: #000000; }
+
+.dolar-value {
+  font-size: 20px;
+  color: #a6a6a6; }
+
+.open {
+  color: #000000;
+  fill: #000000; }
+
+.notification-txt {
+  color: #56819f;
+  font-size: 14px; }
 
 li.tab {
   float: left;
   height: 30px;
   border-left: 1px solid #e3e3e3;
-  padding: 15px 0; }
+  padding: 15px 0;
+  display: flex;
+  align-items: center; }
   li.tab span {
     padding-right: 15px; }
   li.tab ul {
     display: none;
     float: none;
     background-color: #f5f5f2;
-    padding: 15px 0; }
+    padding: 15px 10px; }
   li.tab:hover {
     background-color: #f5f5f2; }
     li.tab:hover ul {
@@ -620,15 +653,11 @@ ul.dropdown-menu > li > ul > div > li {
   display: inline-block; }
   ul.dropdown-menu > li > ul > div > li span {
     display: block;
-    padding: 5px; }
+    padding: 0 15px; }
 
-.icon-svg {
-  filter: invert(69%) sepia(1%) saturate(3034%) hue-rotate(110deg) brightness(101%) contrast(78%); }
-
+/* --- svg images --- */
 div .info {
-  position: relative;
-  bottom: 27px;
-  left: 23px; }
+  position: relative; }
 
 .profile-name {
   color: #56819f;

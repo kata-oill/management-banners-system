@@ -9,17 +9,22 @@
     min-height: 1px;
     max-height: auto;
 }
+body  {
+    background-color: $main-background-color;
+}
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
+.row {
+    display: flex;
+}
 .padding {
     padding: 25px;
 }
-body {
-    background-color: $main-background-color;
-}
+
+/*--- Bootstrap grid margin --- */
 
 .col-offset-0 {
     margin-left: 0;
@@ -58,6 +63,7 @@ body {
     margin-left: 91.66%;
 }
 
+/*--- Bootstrap grid --- */
 
 @media (min-width: 1200px) {	
 	.col-1 {

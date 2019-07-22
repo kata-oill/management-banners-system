@@ -21,6 +21,10 @@ ul, ol {
 }
 
 .icon {
+	height: 20px;
+	margin: 0 15px;
+}
+svg {
 	fill: $main-menu-font-color;
 	height: 20px;
 	margin: 0 15px;
@@ -37,5 +41,6 @@ ul, ol {
   	background-color: $button-color;
   	border-radius: 50%;
   	float: right;
+  	right: 33px;
 }
 
