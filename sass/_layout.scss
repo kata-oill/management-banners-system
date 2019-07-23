@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 [class*="clearfix"]::before,
 [class*="clearfix"]::after {
     content: "";

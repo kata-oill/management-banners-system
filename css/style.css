@@ -306,6 +306,9 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
 [class*="clearfix"]::before,
 [class*="clearfix"]::after {
   content: "";
@@ -515,8 +518,8 @@ svg {
   margin: 0 10px;
   background-color: #f58220;
   border-radius: 50%;
-  float: right;
-  right: 33px; }
+  left: 15px;
+  bottom: 50px; }
 
 .center-flex {
   display: flex;
@@ -604,6 +607,48 @@ nav {
 
 .nav ul {
   float: right; }
+  .nav ul li {
+    line-height: 60px; }
+
+li.tab {
+  border-left: 1px solid #e3e3e3; }
+
+/* --- dropdown menu --- */
+.main-nav {
+  display: block; }
+  .main-nav li {
+    display: inline-block; }
+    .main-nav li .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: -5px;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      z-index: 10000; }
+      .main-nav li .dropdown-menu:active {
+        display: block;
+        background-color: #f5f5f2; }
+    .main-nav li div.nav-button {
+      display: flex; }
+      .main-nav li div.nav-button:hover {
+        background-color: #f5f5f2; }
+      .main-nav li div.nav-button span {
+        display: inline-block;
+        margin-left: 5px; }
+  .main-nav .button-dropdown {
+    position: relative; }
+
+ul.dropdown-menu > li > ul > div > li {
+  display: inline-block; }
+  ul.dropdown-menu > li > ul > div > li span {
+    display: block;
+    padding: 0 15px; }
+
+ul.notification {
+  width: 210px;
+  left: 0px; }
 
 /* --- dropdown list --- */
 .dropdown-menu {
@@ -630,30 +675,9 @@ nav {
   color: #56819f;
   font-size: 14px; }
 
-li.tab {
-  float: left;
-  height: 30px;
-  border-left: 1px solid #e3e3e3;
-  padding: 15px 0;
+.profile {
   display: flex;
   align-items: center; }
-  li.tab span {
-    padding-right: 15px; }
-  li.tab ul {
-    display: none;
-    float: none;
-    background-color: #f5f5f2;
-    padding: 15px 10px; }
-  li.tab:hover {
-    background-color: #f5f5f2; }
-    li.tab:hover ul {
-      display: block; }
-
-ul.dropdown-menu > li > ul > div > li {
-  display: inline-block; }
-  ul.dropdown-menu > li > ul > div > li span {
-    display: block;
-    padding: 0 15px; }
 
 /* --- svg images --- */
 div .info {
