@@ -525,7 +525,7 @@ svg {
   background-color: #f58220;
   border-radius: 50%;
   left: 15px;
-  bottom: 50px; }
+  bottom: 38px; }
 
 .center-flex {
   display: flex;
@@ -611,19 +611,21 @@ nav {
   border-bottom: 1px solid #e3e3e3;
   background-color: #ffffff; }
 
-.nav ul {
-  float: right; }
-  .nav ul li {
-    line-height: 60px; }
+.nav ul li {
+  line-height: 60px; }
 
 li.tab {
   border-left: 1px solid #e3e3e3; }
 
 /* --- dropdown menu --- */
 .main-nav {
-  display: block; }
+  display: flex;
+  justify-content: flex-end;
+  height: 60px; }
   .main-nav li {
-    display: inline-block; }
+    display: flex;
+    align-content: center;
+    align-items: center; }
     .main-nav li .dropdown-menu {
       display: none;
       position: absolute;
@@ -687,11 +689,12 @@ ul.notification {
 
 /* --- svg images --- */
 div .info {
-  position: relative; }
+  position: absolute; }
 
 .profile-name {
   color: #56819f;
-  font-size: 13px; }
+  font-size: 13px;
+  padding: 0 15px; }
 
 .box {
   background-color: #ffffff;

@@ -1,3 +1,4 @@
+
 /* --- nav bar --- */
 
 nav {
@@ -7,7 +8,6 @@ nav {
 	background-color: $section-background-color;
 }
 .nav ul {
-	float: right;
 
 	li {
 		line-height: 60px;
@@ -19,10 +19,14 @@ li.tab {
 /* --- dropdown menu --- */
 
 .main-nav {
-	display: block;
+	display: flex;
+	justify-content: flex-end;
+	height: 60px;
 
 	li {
-		display: inline-block;
+		display: flex;
+		align-content: center;
+		align-items: center;
 
 
 		.dropdown-menu {
@@ -109,10 +113,11 @@ ul.notification {
 /* --- svg images --- */
 
 div .info {
-	position: relative;
+	position: absolute;
 }
 .profile-name {
 	color: $link-color;
 	font-size: $nick-name-size;
+	padding: 0 15px;
 } 
 
