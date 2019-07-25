@@ -486,6 +486,12 @@ body {
 h1, h2, h3, h4, h5, h6, p, a, span {
   font-family: myriad-pro, sans-serif; }
 
+.box-title {
+  text-transform: uppercase;
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 400; }
+
 a {
   text-decoration: none;
   font-weight: 300;
@@ -686,6 +692,13 @@ div .info {
 .profile-name {
   color: #56819f;
   font-size: 13px; }
+
+.box {
+  background-color: #ffffff;
+  box-shadow: 2px 1px 25px #e3e3e3;
+  margin: 20px; }
+  .box .box-row {
+    border-bottom: 1px solid #e3e3e3; }
 
 /* Sections */
 /* Pages / Views */

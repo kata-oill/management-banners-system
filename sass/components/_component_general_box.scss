@@ -1,0 +1,9 @@
+.box {
+	background-color: $white-color;
+	box-shadow: 2px 1px 25px $border-color;
+	margin: 20px;
+
+	.box-row {
+		border-bottom: 1px solid $border-color;
+	}
+}
