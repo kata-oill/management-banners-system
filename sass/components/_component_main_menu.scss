@@ -1,7 +1,16 @@
 
+.general-content {
+	display: flex;
+	height: 100vw;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
 /* --- nav bar --- */
 
-nav {
+.main-menu {
+	flex-shrink: 0;
+	position: fixed;
 	width: 100%;
 	height: 60px;
 	border-bottom: 1px solid $border-color;
@@ -11,16 +20,18 @@ nav {
 
 	li {
 		line-height: 60px;
-	}
-}
-li.tab {
-	border-left: 1px solid $border-color;
+
+		&.tab {
+			border-left: 1px solid $border-color;
+		}
+	}	
 }
 
 /* --- dropdown menu --- */
 
 .main-nav {
 	display: flex;
+	flex-shrink: 0;
 	justify-content: flex-end;
 	height: 60px;
 
@@ -73,7 +84,7 @@ ul.dropdown-menu > li > ul > div > li {
 } 
 
 ul.notification {
-	width: 210px;
+	width: 231px;
 	left: 0px;
 }
 

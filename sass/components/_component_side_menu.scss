@@ -1,14 +1,4 @@
 
-.center-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.personaldata {
-    padding-left: 7px;
-}
-
 /* --- Hamburger --- */
 
 .hamburger  {
@@ -35,7 +25,70 @@
     }
 }
 
-/* --- Sidebar --- */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* position: fixed; */
+    height: 100vw;
+    max-width: 200px;
+    background-color: $sidebar-menu-background-color;
+    z-index: 10000;
+
+    header {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 60px;
+
+        .main-logo {
+            display: none;
+
+            &:active, &.show {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.sidebar-nav {
+    ul  {
+        flex-wrap: wrap;
+
+        li {
+          display: flex;
+          align-items: center;
+          flex-basis: 100%;
+          height: 40px;
+
+          a {
+            display: flex;
+            text-align: center;
+
+            .personaldata {
+                margin: 0 19px; 
+            }
+          }
+        }
+    }
+
+    .side-title {
+        display: none;
+        padding: 15px 20px;
+        color: $general-font-color;
+        font-size: $sidebar-font-size;
+        font-weight: 500;
+
+        &:active, &.show {
+            display: block;
+            }
+    }
+}
+
+/* --- Sidebar --- 
 
 .sidebar  {
     top: 0;
@@ -52,7 +105,7 @@
     }
 }
 
-/* --- Sidebar Nav --- */
+/* --- Sidebar Nav --- 
 
 .sidebar-nav  {
     position: fixed;
@@ -104,3 +157,5 @@
         }
     }
 }
+
+--- */

@@ -1,9 +1,29 @@
+/* --- box --- */
+
 .box {
 	background-color: $white-color;
 	box-shadow: 2px 1px 25px $border-color;
 	margin: 20px;
+	height: 500px;
+
+	h2.box-title {
+		padding: 5px 15px;
+	}
 
 	.box-row {
-		border-bottom: 1px solid $border-color;
+		border-bottom: 0.3px solid $border-color;
 	}
+}
+
+/* --- calendar --- */
+.calendar {
+	height: 120px;
+}
+.calendar-baner {
+	display: flex;
+	height: 40px;
+	border: 0.3px solid $border-color;
+
+
+
 }
