@@ -4,7 +4,6 @@ function colapseFunctionWallet() {
 }
 
  var dropdownContentWallet = document.getElementById('dropdown-list-wallet');
- var sideMenuBoolean = false;
 
  dropdownContentWallet.addEventListener('click', function() {
     event.preventDefault();
@@ -42,27 +41,17 @@ function colapseFunctionWallet() {
     console.log(3);
  });
 
-function openSideMenu() {
+function sideOpenMenu() {
     document.querySelector('.side-title').classList.add('show');
     document.querySelector('.main-logo').classList.add('show');
-    sideMenuBoolean = true;
-}
-
-function closeSideMenu() {
-    document.querySelector('.side-title').classList.remove('show');
-    document.querySelector('.main-logo').classList.remove('show');
-    sideMenuBoolean = false;
-}
-
-function toggleSideMenu() {
-   sideMenuBoolean? closeSideMenu() : openSideMenu();
 }
 
 var hamburger = document.getElementById('hamburger');
 
 document.querySelector('.hamburger').addEventListener('click', function() {
   event.preventDefault();
-  toggleSideMenu()
+  sideOpenMenu()
+  console.log(6);
 });
 
 
