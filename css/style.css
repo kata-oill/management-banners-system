@@ -338,9 +338,6 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
-.row {
-  display: flex; }
-
 .padding {
   padding: 25px; }
 
@@ -495,6 +492,10 @@ body {
 /* Components */
 h1, h2, h3, h4, h5, h6, p, a, span {
   font-family: myriad-pro, sans-serif; }
+
+.reset {
+  margin: 0;
+  padding: 0; }
 
 .box-title {
   text-transform: uppercase;
@@ -776,24 +777,102 @@ div .info {
   justify-content: center; }
 
 /* --- box --- */
+.flex {
+  display: flex; }
+
 .box {
   background-color: #ffffff;
   box-shadow: 2px 1px 25px #e3e3e3;
   margin: 20px;
-  height: 500px; }
+  min-height: 500px; }
   .box h2.box-title {
     padding: 5px 15px; }
-  .box .box-row {
-    border-bottom: 0.3px solid #e3e3e3; }
+
+.box-border {
+  border-bottom: 0.3px solid #e3e3e3; }
+
+.box-margin {
+  margin: 0 150px; }
+
+/* --- statistic table --- */
+.statistic-table {
+  flex-direction: column;
+  min-height: 50vh; }
+
+table {
+  margin: 30px 0;
+  border-spacing: 20px; }
+
+td, th {
+  height: 20px;
+  padding: 10px 0 10px;
+  border-bottom: 1px solid #ccc; }
+
+td {
+  margin-left: 20px; }
 
 /* --- calendar --- */
 .calendar {
-  height: 120px; }
+  height: 25vh;
+  flex-direction: row; }
 
 .calendar-baner {
   display: flex;
   height: 40px;
-  border: 0.3px solid #e3e3e3; }
+  border: 1px solid #e3e3e3;
+  border-radius: 5px; }
+  .calendar-baner span {
+    margin: 0 10px; }
+
+.left-border {
+  border-left: 1px solid #e3e3e3; }
+
+.orange-refresh {
+  display: flex;
+  fill: white;
+  margin: 0 10px;
+  background-color: #f58220;
+  border-color: #f58220;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px; }
+  .orange-refresh svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: white; }
+
+.orange-add {
+  display: flex;
+  margin: 15px;
+  background-color: #f58220;
+  border-color: #f58220;
+  color: #ffffff;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px; }
+
+.group-button {
+  display: flex;
+  flex-direction: row; }
+
+.earning-chart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  background-color: #f5f5f2;
+  border-color: #f5f5f2;
+  border-radius: 5px; }
+  .earning-chart-button p {
+    margin: 10px; }
+
+button.earning-chart-button {
+  height: 40px; }
+
+button.earning-chart-button:hover {
+  background-color: #ffffff;
+  border-color: #ffffff; }
 
 /* Sections */
 /* Pages / Views */

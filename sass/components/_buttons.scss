@@ -1,0 +1,58 @@
+.orange-refresh {
+	display: flex;
+	fill: white;
+	margin: 0 10px;
+	background-color: $button-color;
+	border-color: $button-color;
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+
+	svg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		fill: white;
+	}
+}
+
+.orange-add {
+	display: flex;
+	margin: 15px;
+	background-color: $button-color;
+	border-color: $button-color;
+	color: $white-color;
+	height: 40px;
+	width: 120px;
+	border-radius: 5px;
+}
+
+.group-button {
+	display: flex;
+	flex-direction: row;
+}
+
+.earning-chart-button {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: $grey-button;
+    border-color: $grey-button;
+    border-radius: 5px;
+
+    p {
+    	margin: 10px;
+    }
+}
+
+button.earning-chart-button {
+	height: 40px;
+}
+
+button.earning-chart-button:hover {
+	    background-color: $section-background-color;
+	    border-color: $section-background-color;
+	}
+
+
