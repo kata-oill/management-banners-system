@@ -490,7 +490,7 @@ body {
   .col-s-12 {
     width: 100%; } }
 /* Components */
-h1, h2, h3, h4, h5, h6, p, a, span {
+h1, h2, h3, h4, h5, h6, p, a, span, td {
   font-family: myriad-pro, sans-serif; }
 
 .reset {
@@ -502,6 +502,12 @@ h1, h2, h3, h4, h5, h6, p, a, span {
   color: #a6a6a6;
   font-size: 16px;
   font-weight: 400; }
+
+.table-content {
+  font-family: myriad-pro, sans-serif;
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 600; }
 
 a {
   text-decoration: none;
@@ -526,6 +532,9 @@ svg {
   height: 20px;
   margin: 0 15px; }
 
+svg:hover {
+  cursor: pointer; }
+
 .arrow {
   height: 12px; }
 
@@ -534,6 +543,33 @@ svg {
   width: 10px;
   margin: 0 10px;
   background-color: #f58220;
+  border-radius: 50%;
+  left: 15px;
+  bottom: 38px; }
+
+.orange-indicator-button {
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  background-color: #f58220;
+  border-radius: 50%;
+  left: 15px;
+  bottom: 38px; }
+
+.blue-indicator-button {
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  background-color: #56819f;
+  border-radius: 50%;
+  left: 15px;
+  bottom: 38px; }
+
+.green-indicator-button {
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  background-color: #04ae00;
   border-radius: 50%;
   left: 15px;
   bottom: 38px; }
@@ -801,7 +837,7 @@ div .info {
 
 table {
   margin: 30px 0;
-  border-spacing: 20px; }
+  border-spacing: 0 0.5px; }
 
 td, th {
   height: 20px;
@@ -809,7 +845,8 @@ td, th {
   border-bottom: 1px solid #ccc; }
 
 td {
-  margin-left: 20px; }
+  margin-left: 20px;
+  padding: 20px 100px 20px 20px; }
 
 /* --- calendar --- */
 .calendar {
@@ -827,6 +864,26 @@ td {
 .left-border {
   border-left: 1px solid #e3e3e3; }
 
+/* --- link table --- */
+table.table-links {
+  margin: 30px 0;
+  border-spacing: 0 0.5px; }
+
+td.table-icon {
+  padding: 10px 10px 15px 0px; }
+  td.table-icon svg {
+    height: 10px; }
+
+.table-icon a {
+  opacity: 0; }
+  .table-icon a :hover {
+    fill: #f58220; }
+
+table.table-links tr:hover {
+  background-color: #f5f5f2; }
+  table.table-links tr:hover a {
+    opacity: 1; }
+
 .orange-refresh {
   display: flex;
   fill: white;
@@ -842,15 +899,28 @@ td {
     justify-content: center;
     fill: white; }
 
+.orange-refresh:hover {
+  background-color: #ffffff;
+  border-color: #f58220;
+  cursor: pointer; }
+  .orange-refresh:hover svg {
+    fill: #f58220; }
+
 .orange-add {
   display: flex;
-  margin: 15px;
-  background-color: #f58220;
-  border-color: #f58220;
-  color: #ffffff;
+  margin: 30px 15px;
   height: 40px;
   width: 120px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  background-color: #f58220;
+  border-color: #f58220;
+  color: #ffffff; }
+
+.orange-add:hover {
+  background-color: #ffffff;
+  border-color: #f58220;
+  color: #f58220;
+  cursor: pointer; }
 
 .group-button {
   display: flex;
@@ -865,14 +935,18 @@ td {
   border-color: #f5f5f2;
   border-radius: 5px; }
   .earning-chart-button p {
-    margin: 10px; }
+    margin: 10px;
+    color: #a6a6a6;
+    font-size: 16px;
+    font-weight: 300; }
 
 button.earning-chart-button {
   height: 40px; }
 
 button.earning-chart-button:hover {
   background-color: #ffffff;
-  border-color: #ffffff; }
+  border-color: #ffffff;
+  cursor: pointer; }
 
 /* Sections */
 /* Pages / Views */

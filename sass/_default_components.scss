@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, p, a, span {
+h1, h2, h3, h4, h5, h6, p, a, span, td {
 	font-family: $main-font;
 }
 
@@ -12,6 +12,13 @@ padding: 0;
 	color: $general-font-color;
 	font-size: $main-font-size;
 	font-weight: 400;
+}
+
+.table-content {
+	font-family: $main-font;
+	color: $general-font-color;
+	font-size: $main-font-size;
+	font-weight: 600;
 }
 
 a {
@@ -42,6 +49,10 @@ svg {
 	margin: 0 15px;
 }
 
+svg:hover {
+	cursor: pointer;
+}
+
 .arrow {
 	height: 12px;
 }
@@ -56,3 +67,32 @@ svg {
     bottom: 38px;
 }
 
+.orange-indicator-button {
+	height: 15px;
+  	width: 15px;
+  	margin: 0 10px;
+  	background-color: $button-color;
+  	border-radius: 50%;
+  	left: 15px;
+    bottom: 38px;
+}
+
+.blue-indicator-button {
+	height: 15px;
+  	width: 15px;
+  	margin: 0 10px;
+  	background-color: $blue-color;
+  	border-radius: 50%;
+  	left: 15px;
+    bottom: 38px;
+}
+
+.green-indicator-button {
+	height: 15px;
+  	width: 15px;
+  	margin: 0 10px;
+  	background-color: $green-color;
+  	border-radius: 50%;
+  	left: 15px;
+    bottom: 38px;
+}

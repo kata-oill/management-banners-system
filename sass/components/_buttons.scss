@@ -16,15 +16,32 @@
 	}
 }
 
+.orange-refresh:hover {
+	background-color: $white-color;
+	border-color: $button-color;
+	cursor: pointer;
+	
+	svg {
+		fill: $button-color;
+	}
+}
+
 .orange-add {
 	display: flex;
-	margin: 15px;
-	background-color: $button-color;
-	border-color: $button-color;
-	color: $white-color;
+	margin: 30px 15px;
 	height: 40px;
 	width: 120px;
 	border-radius: 5px;
+	background-color: $button-color;
+	border-color: $button-color;
+	color: $white-color;
+}
+
+.orange-add:hover {
+	background-color: $white-color;
+	border-color: $button-color;
+	color: $button-color;
+	cursor: pointer;
 }
 
 .group-button {
@@ -42,7 +59,10 @@
     border-radius: 5px;
 
     p {
-    	margin: 10px;
+    margin: 10px;
+	color: $general-font-color;
+	font-size: $main-font-size;
+	font-weight: 300;
     }
 }
 
@@ -53,6 +73,7 @@ button.earning-chart-button {
 button.earning-chart-button:hover {
 	    background-color: $section-background-color;
 	    border-color: $section-background-color;
+	    cursor: pointer;
 	}
 
 

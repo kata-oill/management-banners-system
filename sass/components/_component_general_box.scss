@@ -41,7 +41,7 @@
 
 table {
 	margin: 30px 0;
-	border-spacing: 20px;
+	border-spacing: 0 0.5px;
 }
 
 td, th {
@@ -52,7 +52,10 @@ td, th {
 
 td {
 	margin-left: 20px;
+	padding: 20px 100px 20px 20px;
 }
+
+
 
 /* --- calendar --- */
 
@@ -74,6 +77,43 @@ td {
 	border-left: 1px solid $border-color;
 }
 
+/* --- link table --- */
+
+
+table.table-links {
+	margin: 30px 0;
+	border-spacing: 0 0.5px;
+}
+
+td.table-icon {
+	padding: 10px 10px 15px 0px;
+
+	svg {
+		height: 10px;
+	}
+}
+
+.table-icon {
+
+	a {
+		opacity: 0;
+
+	:hover {
+		fill: $orange-color; 
+		}
+
+	}
+
+
+}
+
+table.table-links tr:hover {
+	background-color: $grey-color;
+	
+	a {
+		opacity: 1;
+	}
+}
 
 
 
