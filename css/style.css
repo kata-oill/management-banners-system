@@ -433,6 +433,16 @@ ul.sidebar-menu {
     text-transform: uppercase;
     align-items: center; }
 
+.section {
+  border-bottom: 0.3px solid #e3e3e3; }
+
+.box-section {
+  margin: 0 150px; }
+  .box-section h3 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #979797; }
+
 /* Sections */
 /* Pages / Views */
 

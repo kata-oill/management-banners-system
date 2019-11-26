@@ -20,3 +20,17 @@
 		align-items: center;
 	}
 }
+.section {
+	border-bottom: 0.3px solid $border-color;
+}
+
+.box-section {
+	margin: 0 150px;
+	
+	h3 {
+		font-weight: $section-header-weight;
+		font-size: $section-header-size;
+		color: $section-header-color;
+	}
+	
+}
