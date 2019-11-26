@@ -25,6 +25,7 @@ html {
 }
 
 body {
+    background-color: $main-background-color;
     height: 100%;   
     overflow: hidden;
     margin: 0px;
@@ -39,7 +40,8 @@ body {
 }
 
 #left {
-    flex-shrink: 0;  
+    flex-shrink: 0;
+    background-color: $side-menu-background;
 }    
 
 .top-left {
@@ -51,6 +53,7 @@ body {
 }
 
 .top-right {
+    background-color: $white;
     flex-shrink: 0;
     display: inline-flex;
     width: 85vw;
@@ -58,6 +61,7 @@ body {
 }
 
 ul.sidebar-menu {
+    width: 100%;
     flex-wrap: wrap;
     list-style: none;
     flex-direction: column;
@@ -75,10 +79,14 @@ ul.sidebar-menu {
     }
 }
 
-
 .bottom {
-    flex-grow: 1;  
     overflow-y: auto;
+    height: 100%;
+}
+
+.content-container {
+    max-width: 1200px;
+    padding: 30px;
 }
 
 .hamburger  {
