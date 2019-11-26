@@ -8,6 +8,7 @@
 	border-color: $orange-button-color;
 	height: 40px;
 	width: 40px;
+	margin: 15px;
 	border-radius: 5px;
 
 	svg {
@@ -28,4 +29,26 @@
 	}
 }
 
+.add-new {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px 15px;
+	height: 40px;
+	width: 120px;
+	border-radius: 5px;
+	background-color: $orange-button-color;
+	border-color: $orange-button-color;
+	color: $white;
 
+	p {
+		margin: 0px;
+	}
+
+	&:hover {
+		background-color: $orange-button-hover;
+		border-color: $orange-button-hover;
+		color: $white;
+		cursor: pointer;
+	}
+}

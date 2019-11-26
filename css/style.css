@@ -475,6 +475,7 @@ svg {
   border-color: #f58220;
   height: 40px;
   width: 40px;
+  margin: 15px;
   border-radius: 5px; }
   .refresh svg {
     display: flex;
@@ -487,6 +488,25 @@ svg {
     cursor: pointer; }
     .refresh:hover svg {
       fill: #ffffff; }
+
+.add-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 15px;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  background-color: #f58220;
+  border-color: #f58220;
+  color: #ffffff; }
+  .add-new p {
+    margin: 0px; }
+  .add-new:hover {
+    background-color: #ffa200;
+    border-color: #ffa200;
+    color: #ffffff;
+    cursor: pointer; }
 
 /* Sections */
 /* Pages / Views */
