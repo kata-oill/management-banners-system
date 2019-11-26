@@ -4,3 +4,19 @@
 	margin: 20px;
 	min-height: 500px;
 }
+
+.page-header {
+	display: flex;
+	border-bottom: 0.3px solid $border-color;
+	height: 50px;
+
+	h2 {
+		display: flex;
+		font-weight: $page-header-weight;
+		font-size: $page-header-size;
+		color: $page-header-color;
+		padding-left: 20px;
+		text-transform: uppercase;
+		align-items: center;
+	}
+}

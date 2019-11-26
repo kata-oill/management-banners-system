@@ -4,6 +4,7 @@
 
 h1, h2, h3, h4, h5, h6, p, a, span, td {
 	font-family: $main-font;
+    font-weight: $default-font-weight;
 }
 
 .reset {
@@ -60,25 +61,6 @@ body {
     height: 60px;
 }
 
-ul.sidebar-menu {
-    width: 100%;
-    flex-wrap: wrap;
-    list-style: none;
-    flex-direction: column;
-
-    li {
-        display: flex;
-        align-items: center;
-        flex-basis: 100%;
-        height: 40px;
-
-        a {
-            display: flex;
-            text-align: center;
-        }
-    }
-}
-
 .bottom {
     overflow-y: auto;
     height: 100%;
@@ -88,6 +70,8 @@ ul.sidebar-menu {
     max-width: 1200px;
     padding: 30px;
 }
+
+/* --- HAMBURGER  --- */
 
 .hamburger  {
     margin: 20px;
@@ -121,5 +105,26 @@ svg {
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+/* --- SIDEBAR MENU LIST  --- */
+
+ul.sidebar-menu {
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+
+    li {
+        display: flex;
+        align-items: center;
+        flex-basis: 100%;
+        height: 40px;
+
+        a {
+            display: flex;
+            text-align: center;
+        }
     }
 }

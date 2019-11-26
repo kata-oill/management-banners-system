@@ -315,7 +315,8 @@ template {
 	border: 1px solid #ccc;
 }*/
 h1, h2, h3, h4, h5, h6, p, a, span, td {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
 
 .reset {
   margin: 0;
@@ -362,20 +363,6 @@ body {
   width: 85vw;
   height: 60px; }
 
-ul.sidebar-menu {
-  width: 100%;
-  flex-wrap: wrap;
-  list-style: none;
-  flex-direction: column; }
-  ul.sidebar-menu li {
-    display: flex;
-    align-items: center;
-    flex-basis: 100%;
-    height: 40px; }
-    ul.sidebar-menu li a {
-      display: flex;
-      text-align: center; }
-
 .bottom {
   overflow-y: auto;
   height: 100%; }
@@ -384,6 +371,7 @@ ul.sidebar-menu {
   max-width: 1200px;
   padding: 30px; }
 
+/* --- HAMBURGER  --- */
 .hamburger {
   margin: 20px;
   width: 20px;
@@ -410,12 +398,40 @@ svg {
   svg:hover {
     cursor: pointer; }
 
+/* --- SIDEBAR MENU LIST  --- */
+ul.sidebar-menu {
+  width: 100%;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-direction: column; }
+  ul.sidebar-menu li {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    height: 40px; }
+    ul.sidebar-menu li a {
+      display: flex;
+      text-align: center; }
+
 /* Components */
 .content-box {
   background-color: #ffffff;
   box-shadow: 2px 1px 25px #d4d4c9;
   margin: 20px;
   min-height: 500px; }
+
+.page-header {
+  display: flex;
+  border-bottom: 0.3px solid #e3e3e3;
+  height: 50px; }
+  .page-header h2 {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    color: #979797;
+    padding-left: 20px;
+    text-transform: uppercase;
+    align-items: center; }
 
 /* Sections */
 /* Pages / Views */
