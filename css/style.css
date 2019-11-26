@@ -489,6 +489,7 @@ svg {
     .refresh:hover svg {
       fill: #ffffff; }
 
+/* --- ADD NEW BUTTON --- */
 .add-new {
   display: flex;
   align-items: center;
@@ -507,6 +508,33 @@ svg {
     border-color: #ffa200;
     color: #ffffff;
     cursor: pointer; }
+
+/* --- COLOR TABS --- */
+.color-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 5px; }
+  .color-tab div.indicator {
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    background-color: #80bfca;
+    border-radius: 50%;
+    left: 15px;
+    bottom: 38px; }
+  .color-tab button {
+    height: 40px; }
+  .color-tab:hover {
+    background-color: #f5f5f2;
+    border-color: #f5f5f2;
+    cursor: pointer; }
+  .color-tab p {
+    margin: 10px;
+    font-size: 16px; }
 
 /* Sections */
 /* Pages / Views */

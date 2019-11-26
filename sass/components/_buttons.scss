@@ -29,6 +29,8 @@
 	}
 }
 
+/* --- ADD NEW BUTTON --- */
+
 .add-new {
 	display: flex;
 	align-items: center;
@@ -52,3 +54,49 @@
 		cursor: pointer;
 	}
 }
+
+/* --- COLOR TABS --- */
+
+.color-tab {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: $color-tab-background;
+    border-color: $color-tab-background;
+    border-radius: 5px;
+
+    div.indicator {
+    	height: 15px;
+  		width: 15px;
+  		margin: 0 10px;
+  		background-color: $color-tab-blue;
+  		border-radius: 50%;
+  		left: 15px;
+    	bottom: 38px;
+    }
+	
+
+    button {
+    	height: 40px;
+    }
+
+    &:hover {
+    	background-color: $color-tab-hover;
+	    border-color: $color-tab-hover;
+	    cursor: pointer;
+   	}
+
+    p {
+    margin: 10px;
+	font-size: $color-tab-font-size;
+    }
+}
+
+
+
+
+
+
+
+
