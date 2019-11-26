@@ -368,16 +368,17 @@ body {
   height: 100%; }
 
 .content-container {
-  max-width: 1200px;
-  padding: 30px; }
+  max-width: 1200px; }
 
 /* Components */
+/* --- BOX WITH SHADOW  --- */
 .content-box {
   background-color: #ffffff;
   box-shadow: 2px 1px 25px #d4d4c9;
   margin: 20px;
   min-height: 500px; }
 
+/* --- PAGE HEADER  --- */
 .page-header {
   display: flex;
   border-bottom: 0.3px solid #e3e3e3;
@@ -391,15 +392,36 @@ body {
     text-transform: uppercase;
     align-items: center; }
 
+/* --- END OF THE SECTION  --- */
 .section {
   border-bottom: 0.3px solid #e3e3e3; }
 
+/* --- SECTION WITH HEADER  --- */
 .box-section {
   margin: 0 150px; }
   .box-section h3 {
     font-weight: 700;
     font-size: 16px;
     color: #979797; }
+
+/* --- DATE PICKER  --- */
+.date-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 150px;
+  height: 100px; }
+  .date-picker div.calendar-baner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px; }
+    .date-picker div.calendar-baner span {
+      margin: 0 10px; }
+  .date-picker div:first-child {
+    border-right: 1px solid #e3e3e3; }
 
 /* --- HAMBURGER  --- */
 .hamburger {

@@ -1,9 +1,13 @@
+/* --- BOX WITH SHADOW  --- */
+
 .content-box {
 	background-color: $white;
 	box-shadow: 2px 1px 25px $shadow;
 	margin: 20px;
 	min-height: 500px;
 }
+
+/* --- PAGE HEADER  --- */
 
 .page-header {
 	display: flex;
@@ -20,9 +24,14 @@
 		align-items: center;
 	}
 }
+
+/* --- END OF THE SECTION  --- */
+
 .section {
 	border-bottom: 0.3px solid $border-color;
 }
+
+/* --- SECTION WITH HEADER  --- */
 
 .box-section {
 	margin: 0 150px;
@@ -34,3 +43,35 @@
 	}
 	
 }
+
+/* --- DATE PICKER  --- */
+
+.date-picker {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	margin: 0 150px;
+	height: 100px;
+	
+	div.calendar-baner {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 40px;
+		border: 1px solid $border-color;
+		border-radius: 5px; 
+
+		span {
+			margin: 0 10px;
+		}
+
+	}
+
+	div:first-child {
+		border-right: 1px solid $border-color;;
+	}
+
+
+}
+
+
