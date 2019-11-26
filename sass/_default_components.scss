@@ -1,98 +1,55 @@
+* {
+	border: 1px solid #ccc;
+}
+
 h1, h2, h3, h4, h5, h6, p, a, span, td {
 	font-family: $main-font;
 }
 
 .reset {
-margin: 0;
-padding: 0;
-}
-
-.box-title {
-	text-transform: uppercase;
-	color: $general-font-color;
-	font-size: $main-font-size;
-	font-weight: 400;
-}
-
-.table-content {
-	font-family: $main-font;
-	color: $general-font-color;
-	font-size: $main-font-size;
-	font-weight: 600;
-}
-
-a {
-	text-decoration: none;
-	font-weight: 300;
-	color: #56819f;
-
-	&:hover {
-		color: $link-hover-color;
-		cursor: pointer;
-	}
-}
-
-ul, ol {
-	font-family: $main-font;
-	list-style-type: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
-.icon {
-	height: 20px;
-	margin: 0 15px;
-}
-svg {
-	fill: $main-menu-font-color;
-	height: 20px;
-	margin: 0 15px;
+/* --- CONTENERS  --- */
+
+html {
+    height: 100%;
 }
 
-svg:hover {
-	cursor: pointer;
+body {
+    height: 100%;   
+    overflow: hidden;
+    margin: 0px;
+    display: flex;
+    box-sizing: border-box;
 }
 
-.arrow {
-	height: 12px;
+.column {
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
 }
 
-.orange-indicator {
-	height: 10px;
-  	width: 10px;
-  	margin: 0 10px;
-  	background-color: $button-color;
-  	border-radius: 50%;
-  	left: 15px;
-    bottom: 38px;
+#left {
+    flex-shrink: 0;  
+}    
+
+.top-left {
+    flex-shink: 0;
 }
 
-.orange-indicator-button {
-	height: 15px;
-  	width: 15px;
-  	margin: 0 10px;
-  	background-color: $button-color;
-  	border-radius: 50%;
-  	left: 15px;
-    bottom: 38px;
+.top-right {
+    flex-shrink: 0;
+    display: inline-flex;
 }
 
-.blue-indicator-button {
-	height: 15px;
-  	width: 15px;
-  	margin: 0 10px;
-  	background-color: $blue-color;
-  	border-radius: 50%;
-  	left: 15px;
-    bottom: 38px;
+ul {
+    display: inline-flex;
+    list-style: none;
 }
 
-.green-indicator-button {
-	height: 15px;
-  	width: 15px;
-  	margin: 0 10px;
-  	background-color: $green-color;
-  	border-radius: 50%;
-  	left: 15px;
-    bottom: 38px;
+.bottom {
+    flex-grow: 1;  
+    overflow-y: auto;
 }

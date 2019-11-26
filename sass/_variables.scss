@@ -1,44 +1,48 @@
+/* --- MAIN FONT  --- */
 
-/* --- Colors --- */
+$main-font: 'Roboto', sans-serif;
+
+/* --- MAIN BACKGROUND --- */
 
 $main-background-color: #f5f5f2;
-$section-background-color: #ffffff;
-$border-color: #e3e3e3;
 
+/* ---  TEXTS  --- */
 
-$hamburger-color: #999999;
-$sidebar-menu-background-color: #191919;
-$sidebar-menu-hover-color: #282828;
+$page-header-size: 16px;
+$page-header-weight: 500;
+$page-header-color: #979797;
 
-$general-font-color: #a6a6a6;
-$main-menu-font-color: #9c9c9c;
-$sidemenu-font-hover: #f5f5f2;
+$section-header-size: 16px;
+$section-header-weight: 700;
+$section-header-color: #979797;
+
+$standard-text-size: 14px;
+$standard-text-weight: 300;
+$standard-text-color: #333333;
+
+/* --- LINKS  --- */
+
+$large-link-size: 16px;
+$small-link-size: 13px;
 $link-color: #56819f;
 $link-hover-color: #ffa200;
-$black-color: #000000;
-$white-color: #ffffff;
 
+/* --- COLOR TABS  --- */
 
-$table-hover-color: #f1f3f3;
+$color-tab-background: #ffffff;
+$color-tab-hover: #f5f5f2;
+$color-tab-blue: #80bfca;
+$color-tab-green: #59b66d;
+$color-tab-orange: #ffa200;
 
-$button-color: #f58220;
-$grey-button: #f5f5f2;
-$grey-color: #f5f5f2;
-$blue-color: #56819f;
-$green-color: #04ae00;
-$online-color: #04ae00;
-$orange-color: #f58220;
+/* --- ORANGE BUTTON --- */
 
-/* --- Font sizes --- */
+$orange-button-color: #f58220;
+$orange-button-hover: #ffa200;
+$orange-button-text-color: #ffffff;
+$orange-button-text-weight: 300;
+$orange-button-text-size: 18px;
 
-$value-font-size: 20px;
-$button-font-size: 18px;
-$main-font-size: 16px;
-$sidebar-font-size: 14px;
-$nick-name-size: 13px;
-$notification-font-size: 12px;
+/* ---   --- */
 
-
-/* --- Fonts --- */
-
-$main-font: myriad-pro, sans-serif;
+/* ---   --- */
