@@ -466,6 +466,28 @@ svg {
   svg:hover {
     cursor: pointer; }
 
+/* --- REFRESH BUTTON --- */
+.refresh {
+  display: flex;
+  fill: white;
+  margin: 0 10px;
+  background-color: #f58220;
+  border-color: #f58220;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px; }
+  .refresh svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #ffffff; }
+  .refresh:hover {
+    background-color: #ffa200;
+    border-color: #ffa200;
+    cursor: pointer; }
+    .refresh:hover svg {
+      fill: #ffffff; }
+
 /* Sections */
 /* Pages / Views */
 

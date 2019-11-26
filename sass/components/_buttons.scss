@@ -1,0 +1,31 @@
+/* --- REFRESH BUTTON --- */
+
+.refresh {
+	display: flex;
+	fill: white;
+	margin: 0 10px;
+	background-color: $orange-button-color;
+	border-color: $orange-button-color;
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+
+	svg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		fill: $white;
+	}
+
+	&:hover {
+		background-color: $orange-button-hover;
+		border-color: $orange-button-hover;
+		cursor: pointer;
+	
+		svg {
+			fill: $white;
+		}
+	}
+}
+
+
