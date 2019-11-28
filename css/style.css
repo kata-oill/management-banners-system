@@ -594,6 +594,10 @@ div .info {
   font-size: 14px;
   padding: 0 15px; }
 
+.color-tabs-group {
+  display: flex;
+  flex-direction: row; }
+
 /* --- REFRESH BUTTON --- */
 .refresh {
   display: flex;
@@ -646,11 +650,16 @@ div .info {
   background-color: #ffffff;
   border-color: #ffffff;
   border-radius: 5px; }
+  .color-tab.blue div.indicator {
+    background-color: #80bfca; }
+  .color-tab.orange div.indicator {
+    background-color: #ffa200; }
+  .color-tab.green div.indicator {
+    background-color: #59b66d; }
   .color-tab div.indicator {
     height: 15px;
     width: 15px;
     margin: 0 10px;
-    background-color: #80bfca;
     border-radius: 50%;
     left: 15px;
     bottom: 38px; }

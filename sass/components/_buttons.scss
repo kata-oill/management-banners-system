@@ -1,3 +1,8 @@
+.color-tabs-group {
+	display: flex;
+	flex-direction: row;
+}
+
 /* --- REFRESH BUTTON --- */
 
 .refresh {
@@ -66,17 +71,33 @@
     border-color: $color-tab-background;
     border-radius: 5px;
 
+    &.blue {
+    	div.indicator{
+    		background-color: $color-tab-blue;
+    	}
+    }
+
+    &.orange {
+    	div.indicator{
+    		background-color: $color-tab-orange;
+    	}
+    }
+
+    &.green {
+    	div.indicator{
+    		background-color: $color-tab-green;
+    	}
+    }
+
     div.indicator {
     	height: 15px;
   		width: 15px;
   		margin: 0 10px;
-  		background-color: $color-tab-blue;
   		border-radius: 50%;
   		left: 15px;
     	bottom: 38px;
     }
 	
-
     button {
     	height: 40px;
     }
