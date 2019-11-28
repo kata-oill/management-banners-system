@@ -56,7 +56,7 @@ body {
 .top-right {
     background-color: $white;
     flex-shrink: 0;
-    display: inline-flex;
+    border-bottom: 1px solid $border-color;
     width: 85vw;
     height: 60px;
 }

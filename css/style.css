@@ -359,7 +359,7 @@ body {
 .top-right {
   background-color: #ffffff;
   flex-shrink: 0;
-  display: inline-flex;
+  border-bottom: 1px solid #e3e3e3;
   width: 85vw;
   height: 60px; }
 
@@ -496,6 +496,92 @@ svg {
   margin: 10px 10px; }
   svg:hover {
     cursor: pointer; }
+
+/* --- nav bar --- */
+.nav ul li {
+  line-height: 60px; }
+  .nav ul li.tab {
+    border-left: 1px solid #e3e3e3; }
+
+/* --- dropdown menu --- */
+.main-nav {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  height: 60px;
+  margin: 0; }
+  .main-nav li {
+    display: flex;
+    align-content: center;
+    align-items: center; }
+    .main-nav li .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      z-index: 10000; }
+      .main-nav li .dropdown-menu:active, .main-nav li .dropdown-menu.show {
+        display: block;
+        background-color: #f5f5f2; }
+    .main-nav li div.nav-button {
+      display: flex; }
+      .main-nav li div.nav-button:hover {
+        background-color: #f5f5f2; }
+      .main-nav li div.nav-button span {
+        display: inline-block;
+        margin-left: 5px; }
+  .main-nav .button-dropdown {
+    position: relative; }
+
+ul.dropdown-menu > li > ul > div > li {
+  display: inline-block; }
+  ul.dropdown-menu > li > ul > div > li span {
+    display: block;
+    padding: 0 15px; }
+
+ul.notification {
+  width: 231px;
+  left: 0px; }
+
+/* --- dropdown list --- */
+.dropdown-menu {
+  border: 1px solid #e3e3e3;
+  box-shadow: 2px 1px 25px #e3e3e3; }
+
+.dropdown-title {
+  font-size: 14px;
+  color: #979797; }
+
+.dropdown-value {
+  font-size: 14px;
+  color: #000000; }
+
+.dolar-value {
+  font-size: 14px;
+  color: #333333; }
+
+.open {
+  color: #000000;
+  fill: #000000; }
+
+.notification-txt {
+  color: #56819f;
+  font-size: 14px; }
+
+.profile {
+  display: flex;
+  align-items: center; }
+
+/* --- svg images --- */
+div .info {
+  position: absolute; }
+
+.profile-name {
+  color: #56819f;
+  font-size: 14px;
+  padding: 0 15px; }
 
 /* --- REFRESH BUTTON --- */
 .refresh {

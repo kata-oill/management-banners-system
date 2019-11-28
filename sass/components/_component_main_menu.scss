@@ -1,0 +1,120 @@
+/* --- nav bar --- */
+
+
+.nav ul {
+
+	li {
+		line-height: 60px;
+
+		&.tab {
+			border-left: 1px solid $border-color;
+		}
+	}	
+}
+
+/* --- dropdown menu --- */
+
+.main-nav {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: flex-end;
+	height: 60px;
+	margin: 0;
+
+	li {
+		display: flex;
+		align-content: center;
+		align-items: center;
+
+
+		.dropdown-menu {
+			display: none;
+    		position: absolute;
+    		top: 0;
+    		padding: 0;
+    		margin: 0;
+   			text-align: left;
+   			z-index: 10000;
+
+   			&:active, &.show {
+   				display: block;
+   				background-color: $main-background-color;
+   			}
+		}
+
+		div.nav-button {
+			display: flex;
+
+			&:hover {
+				background-color: $main-background-color;
+			}
+
+    		span {
+    			display: inline-block;
+    			margin-left: 5px;
+    		}
+		}
+	}
+	.button-dropdown {
+		position: relative;
+	}
+}
+
+ul.dropdown-menu > li > ul > div > li {
+	display: inline-block;
+
+	span {
+		display: block;
+		padding: 0 15px;
+	}
+} 
+
+ul.notification {
+	width: 231px;
+	left: 0px;
+}
+
+/* --- dropdown list --- */
+
+.dropdown-menu {
+	border: 1px solid $border-color;
+	box-shadow: 2px 1px 25px $border-color;
+}
+.dropdown-title {
+	font-size: 14px;
+	color: $page-header-color;
+}
+.dropdown-value {
+	font-size: 14px;
+	color: $black;
+}
+.dolar-value {
+	font-size: $standard-text-size;
+	color: $standard-text-color;
+}
+.open {
+	color: $black;
+	fill: $black;
+}
+.notification-txt {
+	color: $link-color;
+	font-size: 14px;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+}
+
+
+/* --- svg images --- */
+
+div .info {
+	position: absolute;
+}
+.profile-name {
+	color: $link-color;
+	font-size: $standard-text-size;
+	padding: 0 15px;
+} 
+
