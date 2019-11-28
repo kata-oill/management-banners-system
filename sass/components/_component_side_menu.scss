@@ -25,6 +25,27 @@
     }
 }
 
+/* --- SIDEBAR LOGO  --- */
+
+.top-left {
+    a {
+        width: 100%;
+        display: flex;
+
+        img {
+            margin: 15px;
+
+            .main-logo {
+                display: none;
+
+                 &:active, &.show {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 /* --- SIDEBAR MENU LIST  --- */
 
 ul.sidebar-menu {
@@ -39,9 +60,45 @@ ul.sidebar-menu {
         flex-basis: 100%;
         height: 40px;
 
+        &:hover {
+
+            background-color: $side-menu-hover-backround;
+
+            .orange-hover-bar {
+                height: 40px;
+                width: 5px;
+                background-color: $color-tab-orange;
+            }
+
+            span {
+                color: $white;
+            }
+
+            svg {
+                fill: $white;
+            }
+        }
+
         a {
             display: flex;
             text-align: center;
+            height: 40px;
+            width: 40px;
+            margin: 0 10px;
+
+        }
+
+        span {
+            color: $section-header-color;
+            font-size: $standard-text-size;
+
+            .side-title {
+                display: none;
+
+                &:active, &.show {
+                    display: block;
+                }
+            }
         }
     }
 }
@@ -51,7 +108,7 @@ ul.sidebar-menu {
 svg {
     fill: $section-header-color;
     height: 20px;
-    margin: 0 15px;
+    margin: 10px 10px;
 
     &:hover {
         cursor: pointer;

@@ -347,7 +347,7 @@ body {
 
 #left {
   flex-shrink: 0;
-  background-color: #333333; }
+  background-color: #191919; }
 
 .top-left {
   display: flex;
@@ -443,6 +443,17 @@ body {
   .hamburger::after {
     transform: translateY(14px); }
 
+/* --- SIDEBAR LOGO  --- */
+.top-left a {
+  width: 100%;
+  display: flex; }
+  .top-left a img {
+    margin: 15px; }
+    .top-left a img .main-logo {
+      display: none; }
+      .top-left a img .main-logo:active, .top-left a img .main-logo.show {
+        display: block; }
+
 /* --- SIDEBAR MENU LIST  --- */
 ul.sidebar-menu {
   width: 100%;
@@ -454,15 +465,35 @@ ul.sidebar-menu {
     align-items: center;
     flex-basis: 100%;
     height: 40px; }
+    ul.sidebar-menu li:hover {
+      background-color: #282828; }
+      ul.sidebar-menu li:hover .orange-hover-bar {
+        height: 40px;
+        width: 5px;
+        background-color: #ffa200; }
+      ul.sidebar-menu li:hover span {
+        color: #ffffff; }
+      ul.sidebar-menu li:hover svg {
+        fill: #ffffff; }
     ul.sidebar-menu li a {
       display: flex;
-      text-align: center; }
+      text-align: center;
+      height: 40px;
+      width: 40px;
+      margin: 0 10px; }
+    ul.sidebar-menu li span {
+      color: #979797;
+      font-size: 14px; }
+      ul.sidebar-menu li span .side-title {
+        display: none; }
+        ul.sidebar-menu li span .side-title:active, ul.sidebar-menu li span .side-title.show {
+          display: block; }
 
 /* --- SIDEBAR MENU ICONS  --- */
 svg {
   fill: #979797;
   height: 20px;
-  margin: 0 15px; }
+  margin: 10px 10px; }
   svg:hover {
     cursor: pointer; }
 

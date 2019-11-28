@@ -1,5 +1,5 @@
  
-function colapseFunctionWallet() {
+/*function colapseFunctionWallet() {
   document.getElementById("dropdown-list-wallet").classList.toggle("show");
 }
 
@@ -41,6 +41,7 @@ function colapseFunctionWallet() {
     dropdownContentWallet.classList.remove('show');
     console.log(3);
  });
+ */
 
 function openSideMenu() {
     document.querySelector('.side-title').classList.add('show');
