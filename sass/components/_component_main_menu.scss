@@ -53,10 +53,19 @@
     			display: inline-block;
     			margin-left: 5px;
     		}
+
+    		a {
+    			display: flex;
+    			align-items: center;
+    		}
 		}
 	}
 	.button-dropdown {
 		position: relative;
+
+		a {
+			display: flex;
+		}
 	}
 }
 
@@ -105,7 +114,12 @@ ul.notification {
 	display: flex;
 	align-items: center;
 }
-
+.arrow {
+	height: 10px;
+}
+.exit {
+	height: 15px;
+}
 
 /* --- svg images --- */
 

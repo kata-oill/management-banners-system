@@ -532,8 +532,13 @@ svg {
       .main-nav li div.nav-button span {
         display: inline-block;
         margin-left: 5px; }
+      .main-nav li div.nav-button a {
+        display: flex;
+        align-items: center; }
   .main-nav .button-dropdown {
     position: relative; }
+    .main-nav .button-dropdown a {
+      display: flex; }
 
 ul.dropdown-menu > li > ul > div > li {
   display: inline-block; }
@@ -573,6 +578,12 @@ ul.notification {
 .profile {
   display: flex;
   align-items: center; }
+
+.arrow {
+  height: 10px; }
+
+.exit {
+  height: 15px; }
 
 /* --- svg images --- */
 div .info {
