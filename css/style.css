@@ -399,7 +399,7 @@ body {
 
 /* --- SECTION WITH HEADER  --- */
 .box-section {
-  margin: 0 150px; }
+  margin: 20px 150px; }
   .box-section h3 {
     font-weight: 700;
     font-size: 16px;
@@ -629,6 +629,25 @@ table.table-links tr:hover {
   background-color: #f5f5f2; }
   table.table-links tr:hover a {
     opacity: 1; }
+
+.one-digit-table-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+table.one-digit-table {
+  margin: 30px 0;
+  border-spacing: 0 0.5px; }
+  table.one-digit-table td {
+    height: 20px;
+    padding: 10px 20px 10px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 20px; }
+    table.one-digit-table td.row-name {
+      font-weight: 700;
+      font-size: 16px;
+      color: #979797;
+      padding: 20px 100px 20px 20px; }
 
 .color-tabs-group {
   display: flex;

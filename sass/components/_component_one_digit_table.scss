@@ -1,0 +1,28 @@
+.one-digit-table-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+table.one-digit-table {
+	margin: 30px 0;
+	border-spacing: 0 0.5px;
+
+
+	td {
+		height: 20px;
+		padding: 10px 20px 10px;
+		border-bottom: 1px solid #ccc;
+		margin-left: 20px;
+
+		&.row-name {
+			font-weight: $row-name-weight;
+			font-size: $row-name-size;
+			color: $row-name-color;
+			padding: 20px 100px 20px 20px;
+
+		}
+	}
+	
+}
