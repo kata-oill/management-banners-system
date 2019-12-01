@@ -600,6 +600,29 @@ div .info {
   font-size: 14px;
   padding: 0 15px; }
 
+table.table-links {
+  margin: 30px 0;
+  border-spacing: 0 0.5px; }
+  table.table-links td {
+    height: 20px;
+    padding: 10px 0 10px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 20px;
+    padding: 20px 100px 20px 20px; }
+  table.table-links td.table-icon {
+    padding: 10px 10px 15px 0px; }
+    table.table-links td.table-icon svg {
+      height: 10px; }
+    table.table-links td.table-icon a {
+      opacity: 0; }
+      table.table-links td.table-icon a :hover {
+        fill: #ffa200; }
+
+table.table-links tr:hover {
+  background-color: #f5f5f2; }
+  table.table-links tr:hover a {
+    opacity: 1; }
+
 .color-tabs-group {
   display: flex;
   flex-direction: row; }

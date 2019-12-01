@@ -1,0 +1,41 @@
+table.table-links {
+	margin: 30px 0;
+	border-spacing: 0 0.5px;
+
+
+	td {
+	  	height: 20px;
+	  	padding: 10px 0 10px;
+	 	border-bottom: 1px solid #ccc;
+		margin-left: 20px;
+		padding: 20px 100px 20px 20px;
+
+	}
+
+	td.table-icon {
+		padding: 10px 10px 15px 0px;
+
+		svg {
+			height: 10px;
+		}
+
+		a {
+			opacity: 0;
+
+		:hover {
+			fill: $link-hover-color; 
+			}
+
+		}
+	}
+}
+
+
+table.table-links tr:hover {
+	background-color: $color-tab-hover;
+	
+	a {
+		opacity: 1;
+	}
+}
+
