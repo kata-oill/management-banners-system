@@ -429,6 +429,8 @@ body {
   flex-grow: 1; }
   .sidebar.isClosed {
     flex-grow: 0; }
+  .sidebar.mobileIsClosed {
+    display: none !important; }
 
 .rightside-content {
   flex-grow: 9; }

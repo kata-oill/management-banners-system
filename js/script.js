@@ -70,16 +70,22 @@ document.querySelector('.hamburger').addEventListener('click', function() {
 
 */
 
-
+/* --- CLOSE SIDE MENU --- */
 
 $(document).ready(function() {
-    $('.hamburger').on('click', function() {
+    $('#hamburger').on('click', function() {
         $('.main-logo').toggleClass('isClosed');
         $('.sidebar').toggleClass('isClosed');
         $('.side-title').toggleClass('isClosed');
     });
 });
 
+
+$(document).ready(function() {
+    $('#mobile-hamburger').on('click', function() {
+        $('#left').toggleClass('mobileIsClosed');
+    });
+});
 
 
 

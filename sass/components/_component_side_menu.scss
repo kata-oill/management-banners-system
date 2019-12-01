@@ -6,6 +6,10 @@
         flex-grow: 0;
     }
 
+    &.mobileIsClosed {
+        display: none !important;
+    }
+
 }
 
 .rightside-content {
