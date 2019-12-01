@@ -359,6 +359,8 @@ body {
   background-color: #ffffff;
   flex-shrink: 0;
   border-bottom: 1px solid #e3e3e3;
+  display: flex;
+  justify-content: space-between;
   height: 60px; }
 
 .bottom {
@@ -518,8 +520,6 @@ svg {
     display: flex;
     align-content: center;
     align-items: center; }
-    .main-nav li:hover {
-      background-color: #f5f5f2; }
     .main-nav li .dropdown-menu {
       display: none;
       position: absolute;
@@ -533,6 +533,8 @@ svg {
         background-color: #f5f5f2; }
     .main-nav li div.nav-button {
       display: flex; }
+      .main-nav li div.nav-button:hover {
+        background-color: #f5f5f2; }
       .main-nav li div.nav-button span {
         display: inline-block;
         margin-left: 5px; }
