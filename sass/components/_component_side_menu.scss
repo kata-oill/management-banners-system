@@ -1,3 +1,17 @@
+.sidebar {
+    display: flex;
+    flex-grow: 1;
+
+    &.isClosed {
+        flex-grow: 0;
+    }
+
+}
+
+.rightside-content {
+    flex-grow: 9;
+}
+
 /* --- HAMBURGER  --- */
 
 .hamburger  {
@@ -28,31 +42,41 @@
 /* --- SIDEBAR LOGO  --- */
 
 .top-left {
+
+   .main-logo {
+
+         &.isClosed {
+            display: none;
+        }
+    }
+
     a {
         width: 100%;
         display: flex;
 
         img {
             margin: 15px;
-
-            .main-logo {
-                display: none;
-
-                 &:active, &.show {
-                    display: block;
-                }
-            }
         }
     }
 }
 
 /* --- SIDEBAR MENU LIST  --- */
 
-ul.sidebar-menu {
+.sidebar-menu-list {
     width: 100%;
     flex-wrap: wrap;
     list-style: none;
     flex-direction: column;
+
+
+    .side-title {
+        color: $section-header-color;
+        font-size: $standard-text-size;
+
+        &.isClosed {
+            display: none;
+        }
+    }
 
     li {
         display: flex;
@@ -86,19 +110,6 @@ ul.sidebar-menu {
             width: 40px;
             margin: 0 10px;
 
-        }
-
-        span {
-            color: $section-header-color;
-            font-size: $standard-text-size;
-
-            .side-title {
-                display: none;
-
-                &:active, &.show {
-                    display: block;
-                }
-            }
         }
     }
 }

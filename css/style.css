@@ -342,25 +342,23 @@ body {
 
 .column {
   height: 100%;
-  display: flex;
   flex-direction: column; }
 
 #left {
   flex-shrink: 0;
-  background-color: #191919; }
+  background-color: #191919;
+  transition: transform 5s; }
 
 .top-left {
   display: flex;
   justify-content: flex-end;
   flex-shrink: 0;
-  width: 15vw;
   height: 60px; }
 
 .top-right {
   background-color: #ffffff;
   flex-shrink: 0;
   border-bottom: 1px solid #e3e3e3;
-  width: 85vw;
   height: 60px; }
 
 .bottom {
@@ -368,7 +366,8 @@ body {
   height: 100%; }
 
 .content-container {
-  max-width: 1200px; }
+  max-width: 1200px;
+  margin: 0 auto; }
 
 /* Components */
 /* --- BOX WITH SHADOW  --- */
@@ -423,6 +422,15 @@ body {
   .date-picker div:first-child {
     border-right: 1px solid #e3e3e3; }
 
+.sidebar {
+  display: flex;
+  flex-grow: 1; }
+  .sidebar.isClosed {
+    flex-grow: 0; }
+
+.rightside-content {
+  flex-grow: 9; }
+
 /* --- HAMBURGER  --- */
 .hamburger {
   margin: 20px;
@@ -444,50 +452,46 @@ body {
     transform: translateY(14px); }
 
 /* --- SIDEBAR LOGO  --- */
+.top-left .main-logo.isClosed {
+  display: none; }
 .top-left a {
   width: 100%;
   display: flex; }
   .top-left a img {
     margin: 15px; }
-    .top-left a img .main-logo {
-      display: none; }
-      .top-left a img .main-logo:active, .top-left a img .main-logo.show {
-        display: block; }
 
 /* --- SIDEBAR MENU LIST  --- */
-ul.sidebar-menu {
+.sidebar-menu-list {
   width: 100%;
   flex-wrap: wrap;
   list-style: none;
   flex-direction: column; }
-  ul.sidebar-menu li {
+  .sidebar-menu-list .side-title {
+    color: #979797;
+    font-size: 14px; }
+    .sidebar-menu-list .side-title.isClosed {
+      display: none; }
+  .sidebar-menu-list li {
     display: flex;
     align-items: center;
     flex-basis: 100%;
     height: 40px; }
-    ul.sidebar-menu li:hover {
+    .sidebar-menu-list li:hover {
       background-color: #282828; }
-      ul.sidebar-menu li:hover .orange-hover-bar {
+      .sidebar-menu-list li:hover .orange-hover-bar {
         height: 40px;
         width: 5px;
         background-color: #ffa200; }
-      ul.sidebar-menu li:hover span {
+      .sidebar-menu-list li:hover span {
         color: #ffffff; }
-      ul.sidebar-menu li:hover svg {
+      .sidebar-menu-list li:hover svg {
         fill: #ffffff; }
-    ul.sidebar-menu li a {
+    .sidebar-menu-list li a {
       display: flex;
       text-align: center;
       height: 40px;
       width: 40px;
       margin: 0 10px; }
-    ul.sidebar-menu li span {
-      color: #979797;
-      font-size: 14px; }
-      ul.sidebar-menu li span .side-title {
-        display: none; }
-        ul.sidebar-menu li span .side-title:active, ul.sidebar-menu li span .side-title.show {
-          display: block; }
 
 /* --- SIDEBAR MENU ICONS  --- */
 svg {
