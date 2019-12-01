@@ -518,6 +518,8 @@ svg {
     display: flex;
     align-content: center;
     align-items: center; }
+    .main-nav li:hover {
+      background-color: #f5f5f2; }
     .main-nav li .dropdown-menu {
       display: none;
       position: absolute;
@@ -531,8 +533,6 @@ svg {
         background-color: #f5f5f2; }
     .main-nav li div.nav-button {
       display: flex; }
-      .main-nav li div.nav-button:hover {
-        background-color: #f5f5f2; }
       .main-nav li div.nav-button span {
         display: inline-block;
         margin-left: 5px; }

@@ -26,6 +26,10 @@
 		align-content: center;
 		align-items: center;
 
+		&:hover {
+			background-color: $main-background-color;
+		}
+
 
 		.dropdown-menu {
 			display: none;
@@ -44,10 +48,6 @@
 
 		div.nav-button {
 			display: flex;
-
-			&:hover {
-				background-color: $main-background-color;
-			}
 
     		span {
     			display: inline-block;
