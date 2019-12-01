@@ -4,7 +4,7 @@
 /* --- LINKS  --- */
 /* --- COLOR TABS  --- */
 /* --- ORANGE BUTTON --- */
-/* ---   --- */
+/* ---  TABLE  --- */
 /* ---   --- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -604,19 +604,26 @@ table.table-links {
   margin: 30px 0;
   border-spacing: 0 0.5px; }
   table.table-links td {
+    font-weight: 700;
+    font-size: 16px;
+    color: #979797;
     height: 20px;
     padding: 10px 0 10px;
     border-bottom: 1px solid #ccc;
     margin-left: 20px;
     padding: 20px 100px 20px 20px; }
   table.table-links td.table-icon {
-    padding: 10px 10px 15px 0px; }
+    padding: 10px 10px 10px 0px; }
     table.table-links td.table-icon svg {
       height: 10px; }
     table.table-links td.table-icon a {
       opacity: 0; }
       table.table-links td.table-icon a :hover {
         fill: #ffa200; }
+  table.table-links a {
+    text-decoration: none;
+    color: #56819f;
+    font-size: 16px; }
 
 table.table-links tr:hover {
   background-color: #f5f5f2; }

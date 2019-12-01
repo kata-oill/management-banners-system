@@ -4,6 +4,9 @@ table.table-links {
 
 
 	td {
+		font-weight: $row-name-weight;
+		font-size: $row-name-size;
+		color: $row-name-color;
 	  	height: 20px;
 	  	padding: 10px 0 10px;
 	 	border-bottom: 1px solid #ccc;
@@ -13,7 +16,7 @@ table.table-links {
 	}
 
 	td.table-icon {
-		padding: 10px 10px 15px 0px;
+		padding: 10px 10px 10px 0px;
 
 		svg {
 			height: 10px;
@@ -27,6 +30,12 @@ table.table-links {
 			}
 
 		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $link-color;
+		font-size: $large-link-size;
 	}
 }
 
