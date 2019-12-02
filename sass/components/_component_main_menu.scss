@@ -6,6 +6,10 @@
 	li {
 		line-height: 60px;
 
+		&:hover {
+				background-color: $main-background-color;
+			}
+
 		&.tab {
 			border-left: 1px solid $border-color;
 		}
@@ -35,19 +39,10 @@
     		margin: 0;
    			text-align: left;
    			z-index: 10000;
-
-   			&:active, &.show {
-   				display: block;
-   				background-color: $main-background-color;
-   			}
 		}
 
 		div.nav-button {
 			display: flex;
-
-			&:hover {
-				background-color: $main-background-color;
-			}
 
     		span {
     			display: inline-block;
