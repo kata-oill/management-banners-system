@@ -518,7 +518,13 @@ body {
     width: 91.66%; }
 
   .col-s-12 {
-    width: 100%; } }
+    width: 100%; }
+
+  .top-left .main-logo {
+    display: none; }
+
+  .side-title {
+    display: none; } }
 /* Components */
 /* --- BOX WITH SHADOW  --- */
 .content-box {
