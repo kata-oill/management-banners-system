@@ -56,7 +56,7 @@
 
     a {
         width: 100%;
-        display: flex;
+        //display: flex;
 
         img {
             margin: 15px;
@@ -129,3 +129,11 @@ svg {
         cursor: pointer;
     }
 }
+
+
+    @media (min-width: 766px) {
+        .top-left-down {
+            display: none !important;
+        }
+    }
+

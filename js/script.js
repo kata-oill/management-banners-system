@@ -80,6 +80,12 @@ $(document).ready(function() {
     });
 });
 
+$(".hamburger-mobile").click(function() {
+  $(this).toggleClass("on");
+  $(".mobile-list-menu").slideToggle();
+  return false;
+});
+
 
 $(document).ready(function() {
     $('#mobile-hamburger').on('click', function() {

@@ -114,6 +114,11 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+	.color-tabs-group {
+		flex-direction: column !important;
+	}
+}
 
 
 
