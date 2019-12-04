@@ -28,7 +28,6 @@ html {
 body {
     background-color: $main-background-color;
     min-height: 100%;   
-    //overflow: hidden;
     margin: 0px;
     display: flex;
     box-sizing: border-box;
@@ -63,7 +62,8 @@ body {
 
 .bottom {
     overflow-y: auto;
-    //height: 100%;
+    border-bottom: 0.3px solid $border-color;
+    padding-bottom: 20px;
 }
 
 .content-container {

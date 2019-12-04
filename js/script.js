@@ -5,6 +5,7 @@ $(document).ready(function() {
         $('.main-logo').toggleClass('isClosed');
         $('.sidebar').toggleClass('isClosed');
         $('.side-title').toggleClass('isClosed');
+        $('.manager-bar').toggleClass('isClosed');
     });
 });
 

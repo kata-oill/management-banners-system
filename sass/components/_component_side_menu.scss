@@ -118,6 +118,41 @@
     }
 }
 
+
+/* --- MANAGER BAR  --- */
+
+.manager-bar {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: $section-header-color;
+    font-size: $standard-text-size;
+
+    &.isClosed {
+            display: none;
+    }
+
+    img {
+        margin: 15px 0px;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+    }
+}
+.sidebar-header {
+    font-size: $standard-text-size;
+    text-transform: uppercase;
+    font-weight: $section-header-weight;
+
+}
+
+.manager-bar-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* --- SIDEBAR MENU ICONS  --- */
 
 svg {
