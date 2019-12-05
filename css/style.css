@@ -763,7 +763,8 @@ table.table-links {
     margin-left: 20px;
     padding: 20px 10px 20px 20px; }
   table.table-links td.table-icon {
-    padding: 10px 10px 10px 0px; }
+    padding: 10px 10px 10px 0px;
+    width: 10%; }
     table.table-links td.table-icon svg {
       height: 10px; }
     table.table-links td.table-icon a {
