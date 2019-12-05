@@ -773,7 +773,8 @@ table.table-links {
   table.table-links a {
     text-decoration: none;
     color: #56819f;
-    font-size: 16px; }
+    font-size: 16px;
+    word-wrap: break-word; }
 
 table.table-links tr:hover {
   background-color: #f5f5f2; }
@@ -794,7 +795,10 @@ tr:first-child > td {
     margin: 20px 20px; }
 
   .one-digit-table-section {
-    flex-direction: column !important; } }
+    flex-direction: column !important; }
+
+  td.table-icon {
+    width: 50px; } }
 .one-digit-table-section {
   display: flex;
   flex-direction: row;

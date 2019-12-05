@@ -37,6 +37,7 @@ table.table-links {
 		text-decoration: none;
 		color: $link-color;
 		font-size: $large-link-size;
+		word-wrap: break-word;
 	}
 }
 
@@ -70,5 +71,8 @@ tr:first-child > td {
 	}
 	.one-digit-table-section {
 		flex-direction: column !important;
+	}
+	td.table-icon {
+		width: 50px;
 	}
 }
