@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+
+/* Components */
+
+@import "default_components";
+@import "components/component_side_menu";
+@import "components/component_main_menu";
+@import "components/component_table_links";
+@import "components/component_one_digit_table";
+@import "components/component_mobile-menu";
+@import "components/buttons";
+
+/* Sections */
+
+@import "sections/registration_form";
+
+/* Pages / Views */
+
+@import "pages/registration";

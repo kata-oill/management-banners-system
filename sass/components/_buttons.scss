@@ -1,0 +1,128 @@
+.color-tabs-group {
+	display: flex;
+	flex-direction: row;
+}
+
+/* --- REFRESH BUTTON --- */
+
+.refresh {
+	display: flex;
+	fill: white;
+	margin: 0 10px;
+	background-color: $orange-button-color;
+	border-color: $orange-button-color;
+	height: 40px;
+	width: 40px;
+	margin: 15px;
+	border-radius: 5px;
+
+	svg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		fill: $white;
+	}
+
+	&:hover {
+		background-color: $orange-button-hover;
+		border-color: $orange-button-hover;
+		cursor: pointer;
+	
+		svg {
+			fill: $white;
+		}
+	}
+}
+
+/* --- ADD NEW BUTTON --- */
+
+.add-new {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px 15px;
+	height: 40px;
+	width: 120px;
+	border-radius: 5px;
+	background-color: $orange-button-color;
+	border-color: $orange-button-color;
+	color: $white;
+
+	p {
+		margin: 0px;
+	}
+
+	&:hover {
+		background-color: $orange-button-hover;
+		border-color: $orange-button-hover;
+		color: $white;
+		cursor: pointer;
+	}
+}
+
+/* --- COLOR TABS --- */
+
+.color-tab {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: $color-tab-background;
+    border-color: $color-tab-background;
+    border-radius: 5px;
+
+    &.blue {
+    	div.indicator{
+    		background-color: $color-tab-blue;
+    	}
+    }
+
+    &.orange {
+    	div.indicator{
+    		background-color: $color-tab-orange;
+    	}
+    }
+
+    &.green {
+    	div.indicator{
+    		background-color: $color-tab-green;
+    	}
+    }
+
+    div.indicator {
+    	height: 15px;
+  		width: 15px;
+  		margin: 0 10px;
+  		border-radius: 50%;
+  		left: 15px;
+    	bottom: 38px;
+    }
+	
+    button {
+    	height: 40px;
+    }
+
+    &:hover {
+    	background-color: $color-tab-hover;
+	    border-color: $color-tab-hover;
+	    cursor: pointer;
+   	}
+
+    p {
+    margin: 10px;
+	font-size: $color-tab-font-size;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.color-tabs-group {
+		flex-direction: column !important;
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+/* --- nav bar --- */
+
+.nav ul {
+
+	li {
+		line-height: 60px;
+		display: flex;
+		align-content: center;
+		align-items: center;
+
+		div.nav-button {
+			display: flex;
+
+    		span {
+    			display: inline-block;
+    			margin-left: 5px;
+    		}
+
+    		a {
+    			display: flex;
+    			align-items: center;
+    		}
+		}
+
+		&:hover {
+			background-color: $main-background-color;
+		}
+
+		&.tab {
+			border-left: 1px solid $border-color;
+		}
+	}	
+}
+
+.main-nav {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: flex-end;
+	height: 60px;
+	margin: 0;
+
+	.button-dropdown {
+		position: relative;
+
+		a {
+			display: flex;
+		}
+	}
+}
+
+.dolar-value {
+	font-size: $standard-text-size;
+	color: $standard-text-color;
+}
+
+	div.indicator {
+    	height: 10px;
+  		width: 10px;
+  		margin: 0 5px;
+  		border-radius: 50%;
+  		left: 15px;
+    	bottom: 35px;
+    	background-color: $color-tab-orange;
+}
+
+/* --- svg images --- */
+
+div .info {
+	position: absolute;
+}
+.profile-name {
+	color: $link-color;
+	font-size: $standard-text-size;
+	padding: 0 15px;
+} 
+.arrow {
+	height: 10px;
+}
+.exit {
+	height: 15px;
+}
+
