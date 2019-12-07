@@ -14,9 +14,9 @@
     "build:clean": "rimraf css/*",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
-    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "build-dev:sass": "node-sass --output-style expanded --no-source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
-    "watch:sassprefixer": "onchange -d 100 sass/* node-sass --output-style expanded --source-map true -o css sass -s -- autoprefixer-cli -o css/style.css css/style.css  ",
+    "watch:sassprefixer": "onchange -d 100 sass/* node-sass --output-style expanded --no-source-map true -o css sass -s -- autoprefixer-cli -o css/style.css css/style.css  ",
     "watch:browsersync": "browser-sync start --server --files css/*.css *.html"
   },
   "repository": {
