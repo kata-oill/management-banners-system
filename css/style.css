@@ -557,6 +557,8 @@ body {
 /* --- SECTION WITH HEADER  --- */
 .box-section {
   margin: 20px 150px; }
+  .box-section img {
+    width: 100%; }
   .box-section h3 {
     font-weight: 700;
     font-size: 16px;
@@ -884,6 +886,20 @@ table.one-digit-table {
   display: flex;
   flex-direction: row; }
 
+.button-style {
+  margin: 15px 15px;
+  padding: 0 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  font-size: 16px;
+  height: 40px;
+  width: 120px; }
+  .button-style:hover {
+    border: none;
+    cursor: pointer; }
+
 /* --- REFRESH BUTTON --- */
 .refresh {
   display: flex;
@@ -909,18 +925,12 @@ table.one-digit-table {
 
 /* --- ADD NEW BUTTON --- */
 .add-new {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 15px;
-  height: 40px;
-  width: 120px;
-  border-radius: 5px;
   background-color: #f58220;
   border-color: #f58220;
-  color: #ffffff; }
-  .add-new p {
-    margin: 0px; }
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .add-new:hover {
     background-color: #ffa200;
     border-color: #ffa200;

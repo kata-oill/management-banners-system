@@ -3,6 +3,23 @@
 	flex-direction: row;
 }
 
+.button-style {
+	margin: 15px 15px;
+	padding: 0 20px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+	font-size: $color-tab-font-size;
+	height: 40px;
+	width: 120px;
+
+	&:hover {
+		border: none;
+		cursor: pointer;
+	}
+}
+
 /* --- REFRESH BUTTON --- */
 
 .refresh {
@@ -37,20 +54,12 @@
 /* --- ADD NEW BUTTON --- */
 
 .add-new {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 30px 15px;
-	height: 40px;
-	width: 120px;
-	border-radius: 5px;
 	background-color: $orange-button-color;
 	border-color: $orange-button-color;
 	color: $white;
-
-	p {
-		margin: 0px;
-	}
+	display: flex;
+    align-items: center;
+    justify-content: center;
 
 	&:hover {
 		background-color: $orange-button-hover;

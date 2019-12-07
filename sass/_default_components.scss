@@ -35,6 +35,10 @@
 
 .box-section {
 	margin: 20px 150px;
+
+	img {
+		width: 100%;
+	}
 	
 	h3 {
 		font-weight: $section-header-weight;
