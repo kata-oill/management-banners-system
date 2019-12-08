@@ -1,15 +1,25 @@
 .sidebar {
     display: flex;
     flex-grow: 1;
+    
 
-    &.isClosed {
+    &.closed {
         flex-grow: 0;
+        align-items: center;
     }
 
-    &.mobileIsClosed {
+    &.mobile-closed {
         display: none !important;
     }
 
+}
+
+.sidebar {
+
+    &.closed > div > ul > li> div.orange-hover-bar {
+        display: none;
+
+    }
 }
 
 .rightside-content {
@@ -50,7 +60,7 @@
 
    .main-logo {
 
-         &.isClosed {
+         &.closed {
             display: none;
         }
     }
@@ -78,7 +88,7 @@
         color: $section-header-color;
         font-size: $standard-text-size;
 
-        &.isClosed {
+        &.closed {
             display: none;
         }
     }
@@ -130,7 +140,7 @@
     color: $section-header-color;
     font-size: $standard-text-size;
 
-    &.isClosed {
+    &.closed {
             display: none;
     }
 

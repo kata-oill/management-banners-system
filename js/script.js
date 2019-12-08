@@ -2,10 +2,10 @@
 
 $(document).ready(function() {
     $('#hamburger').on('click', function() {
-        $('.main-logo').toggleClass('isClosed');
-        $('.sidebar').toggleClass('isClosed');
-        $('.side-title').toggleClass('isClosed');
-        $('.manager-bar').toggleClass('isClosed');
+        $('.main-logo').toggleClass('closed');
+        $('.sidebar').toggleClass('closed');
+        $('.side-title').toggleClass('closed');
+        $('.manager-bar').toggleClass('closed');
     });
 });
 
@@ -18,7 +18,7 @@ $(".hamburger-mobile").click(function() {
 
 $(document).ready(function() {
     $('#mobile-hamburger').on('click', function() {
-        $('#left').toggleClass('mobileIsClosed');
+        $('#left').toggleClass('mobile-closed');
     });
 });
 
